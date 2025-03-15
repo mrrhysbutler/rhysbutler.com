@@ -5,6 +5,29 @@ import { Callout } from "@/components/ui/Callout";
 export const metadata = {
   title: "Work | Rhys Butler",
   description: "Professional experience and projects by Rhys Butler, Head of Development at Rapid",
+  openGraph: {
+    title: "Work | Rhys Butler",
+    description: "Professional experience and projects by Rhys Butler, Head of Development at Rapid",
+    url: "https://rhysbutler.com/work",
+    type: "website",
+    images: [
+      {
+        url: "https://rhysbutler.com/api/og?title=Work&subtitle=Professional%20experience%20and%20projects",
+        width: 1200,
+        height: 630,
+        alt: "Work | Rhys Butler",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Work | Rhys Butler",
+    description: "Professional experience and projects by Rhys Butler, Head of Development at Rapid",
+    images: ["https://rhysbutler.com/api/og?title=Work&subtitle=Professional%20experience%20and%20projects"],
+  },
+  alternates: {
+    canonical: "/work",
+  },
 };
 
 export default function WorkPage() {
