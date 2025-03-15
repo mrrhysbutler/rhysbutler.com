@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rhys Butler | Head of Development at Rapid",
   description: "Personal website of Rhys Butler, Head of Development at Rapid and ex-developer",
+  metadataBase: new URL("https://rhysbutler.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Rhys Butler | Head of Development at Rapid",
     description: "Personal website of Rhys Butler, Head of Development at Rapid and ex-developer",
@@ -24,13 +28,37 @@ export const metadata: Metadata = {
     siteName: "Rhys Butler",
     locale: "en-US",
     type: "website",
+    images: [
+      {
+        url: "https://rhysbutler.com/img/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rhys Butler",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rhys Butler | Head of Development at Rapid",
     description: "Personal website of Rhys Butler, Head of Development at Rapid and ex-developer",
     creator: "@mrrhysbutler",
+    images: ["https://rhysbutler.com/img/og-image.jpg"],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: "verification_token", // Replace with your Google verification token if you have one
+  },
+  authors: [{ name: "Rhys Butler", url: "https://rhysbutler.com" }],
+  keywords: ["Rhys Butler", "Development", "Rapid", "Web Development", "Software Engineering"],
 };
 
 export default function RootLayout({

@@ -4,6 +4,29 @@ import { getAllPosts } from '@/lib/blog';
 export const metadata = {
   title: 'Blog | Rhys Butler',
   description: 'Thoughts, ideas, and learnings from Rhys Butler',
+  openGraph: {
+    title: 'Blog | Rhys Butler',
+    description: 'Thoughts, ideas, and learnings from Rhys Butler',
+    url: 'https://rhysbutler.com/blog',
+    type: 'website',
+    images: [
+      {
+        url: 'https://rhysbutler.com/api/og?title=Blog&subtitle=Thoughts%2C%20ideas%2C%20and%20learnings',
+        width: 1200,
+        height: 630,
+        alt: 'Blog | Rhys Butler',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Rhys Butler',
+    description: 'Thoughts, ideas, and learnings from Rhys Butler',
+    images: ['https://rhysbutler.com/api/og?title=Blog&subtitle=Thoughts%2C%20ideas%2C%20and%20learnings'],
+  },
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 export default function BlogPage() {
