@@ -66,6 +66,24 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            img: {
+              marginTop: '2rem',
+              marginBottom: '2rem',
+            },
+            figure: {
+              marginTop: '2rem',
+              marginBottom: '2rem',
+            },
+            p: {
+              marginTop: '1.25em',
+              marginBottom: '1.25em',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [

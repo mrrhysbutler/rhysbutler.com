@@ -93,6 +93,29 @@ body {
   font-weight: 600;
 }
 
+/* Add spacing for images in blog posts */
+.prose img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Ensure images in figures also get proper spacing */
+.prose figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Add proper spacing between paragraphs */
+.prose p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+/* Add extra spacing after paragraphs that are followed by another paragraph */
+.prose p + p {
+  margin-top: 1.5em;
+}
+
 .prose h1, .prose h2, .prose h3, .prose h4 {
   color: inherit;
   font-weight: 600;
