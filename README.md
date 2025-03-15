@@ -6,15 +6,14 @@ This repository contains the source code for my personal website. I embarked on 
 
 The layout is intentionally minimalistic, allowing me to start with a clean slate and leverage the capabilities of Claude-3.7-Sonnet. I'm no designer, but I managed to achieve the desired aesthetic with the following steps:
 
-- **Fresh Project Initialization**: Kicked off a new Next.js project.
-- **Content Migration**: Transferred content from the previous version of the website.
-- **Content Updates**: Made minor updates to refresh outdated content.
-- **Site Structure Organization**: Rearranged the layout for better navigation.
-- **GitHub Pages Deployment Exploration**: Experimented with GitHub Actions for deployment.
+- **Fresh Project Initialization**: Kicked off a new Next.js project using Cursor and **Claude-3.7-Sonnet**
+- **Content Migration & Updares**: Transferred content from the previous version of the website. Made minor updates to refresh outdated content.
+- **Site Structure Organization**: Arranged (and rearranged) the layout for better navigation.
+- **GitHub Pages / Vercel Deployment**: Experimented with GitHub Actions for deployment, landed on Vercel.
 
 ## Features
 
-- Modern, clean design
+- Simple, clean design
 - Responsive layout for all devices
 - Dark mode support
 - Static site generation for fast loading
