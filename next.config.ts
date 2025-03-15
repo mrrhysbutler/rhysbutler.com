@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Keep output: 'export' if you need static exports for Vercel
+  // For most Vercel deployments, you can remove this line as Vercel handles SSR natively
+  // output: 'export',
+  
+  // For Vercel, you can use the default image optimization
   images: {
-    unoptimized: true,
+    // Remove unoptimized: true as Vercel supports image optimization
+    domains: ['rhysbutler.com'], // Add your domain if you're hosting images there
   },
-  // Uncomment the line below if you're not using a custom domain
-  // basePath: '/rhysbutler.com',
 };
 
 export default nextConfig;
