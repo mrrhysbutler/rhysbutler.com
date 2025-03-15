@@ -11,10 +11,10 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://rhysbutler.com/api/og?title=Blog&subtitle=Thoughts%2C%20ideas%2C%20and%20learnings',
+        url: 'https://rhysbutler.com/img/rhys-avatar.jpg',
         width: 1200,
-        height: 630,
-        alt: 'Blog | Rhys Butler',
+        height: 1200,
+        alt: 'Rhys Butler',
       },
     ],
   },
@@ -22,7 +22,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Blog | Rhys Butler',
     description: 'Thoughts, ideas, and learnings from Rhys Butler',
-    images: ['https://rhysbutler.com/api/og?title=Blog&subtitle=Thoughts%2C%20ideas%2C%20and%20learnings'],
+    images: ['https://rhysbutler.com/img/rhys-avatar.jpg'],
   },
   alternates: {
     canonical: '/blog',

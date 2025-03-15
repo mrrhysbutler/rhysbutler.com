@@ -13,9 +13,9 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://rhysbutler.com/api/og?title=Rhys%20Butler&subtitle=Head%20of%20Development%20at%20Rapid",
+        url: "https://rhysbutler.com/img/rhys-avatar.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Rhys Butler",
       },
     ],
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Rhys Butler | Head of Development at Rapid",
     description: "Personal website of Rhys Butler, Head of Development at Rapid and ex-developer",
-    images: ["https://rhysbutler.com/api/og?title=Rhys%20Butler&subtitle=Head%20of%20Development%20at%20Rapid"],
+    images: ["https://rhysbutler.com/img/rhys-avatar.jpg"],
   },
   alternates: {
     canonical: "/",

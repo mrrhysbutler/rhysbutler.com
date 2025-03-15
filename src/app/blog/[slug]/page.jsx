@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllPostSlugs, getPostWithHTML } from '@/lib/blog';
+import { getAllPostSlugs, getPostWithHTML, extractFirstImageFromMarkdown } from '@/lib/blog';
 import Script from 'next/script';
 
 export async function generateStaticParams() {
@@ -11,9 +11,26 @@ export async function generateMetadata({ params }) {
   const post = await getPostWithHTML(params.slug);
   const title = `${post.frontmatter.title} | Rhys Butler`;
   const description = post.frontmatter.description || `Blog post by Rhys Butler`;
-  const ogImage = post.frontmatter.meta_img 
-    ? `https://rhysbutler.com/${post.frontmatter.meta_img}`
-    : `https://rhysbutler.com/api/og?title=${encodeURIComponent(post.frontmatter.title)}`;
+  
+  // Try to find an image in this priority order:
+  // 1. meta_img from frontmatter
+  // 2. First image from markdown content
+  // 3. Default profile image
+  let ogImage;
+  
+  if (post.frontmatter.meta_img) {
+    // Use meta_img from frontmatter if available
+    ogImage = `https://rhysbutler.com/${post.frontmatter.meta_img}`;
+  } else {
+    // Try to extract the first image from the content
+    const extractedImage = extractFirstImageFromMarkdown(post.content);
+    if (extractedImage) {
+      ogImage = `https://rhysbutler.com/${extractedImage}`;
+    } else {
+      // Fall back to profile image
+      ogImage = 'https://rhysbutler.com/img/rhys-avatar.jpg';
+    }
+  }
 
   return {
     title,
@@ -27,8 +44,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: ogImage,
-          width: 1200,
-          height: 630,
+          width: ogImage.includes('rhys-avatar') ? 1200 : 1200,
+          height: ogImage.includes('rhys-avatar') ? 1200 : 630,
           alt: post.frontmatter.title,
         },
       ],
@@ -49,15 +66,27 @@ export default async function BlogPost({ params }) {
   const post = await getPostWithHTML(params.slug);
   const publishDate = new Date(post.frontmatter.date).toISOString();
   
+  // Get the image for structured data using the same logic as metadata
+  let postImage;
+  
+  if (post.frontmatter.meta_img) {
+    postImage = `https://rhysbutler.com/${post.frontmatter.meta_img}`;
+  } else {
+    const extractedImage = extractFirstImageFromMarkdown(post.content);
+    if (extractedImage) {
+      postImage = `https://rhysbutler.com/${extractedImage}`;
+    } else {
+      postImage = 'https://rhysbutler.com/img/rhys-avatar.jpg';
+    }
+  }
+  
   // Create structured data for the blog post
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.frontmatter.title,
     description: post.frontmatter.description || '',
-    image: post.frontmatter.meta_img 
-      ? `https://rhysbutler.com/${post.frontmatter.meta_img}`
-      : `https://rhysbutler.com/api/og?title=${encodeURIComponent(post.frontmatter.title)}`,
+    image: postImage,
     datePublished: publishDate,
     dateModified: publishDate,
     author: {
