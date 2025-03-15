@@ -6,6 +6,34 @@ import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
 
+// Function to extract the first image from markdown content
+export function extractFirstImageFromMarkdown(content) {
+  // Look for the first image in markdown format: ![alt](/path/to/image.jpg)
+  const markdownImageRegex = /!\[.*?\]\((.*?)\)/;
+  const markdownMatch = content.match(markdownImageRegex);
+  
+  if (markdownMatch && markdownMatch[1]) {
+    // Remove leading slash if present
+    return markdownMatch[1].startsWith('/') 
+      ? markdownMatch[1].substring(1) 
+      : markdownMatch[1];
+  }
+  
+  // If no markdown image found, look for HTML img tags
+  const htmlImageRegex = /<img.*?src=["'](.*?)["']/;
+  const htmlMatch = content.match(htmlImageRegex);
+  
+  if (htmlMatch && htmlMatch[1]) {
+    // Remove leading slash if present
+    return htmlMatch[1].startsWith('/') 
+      ? htmlMatch[1].substring(1) 
+      : htmlMatch[1];
+  }
+  
+  // No image found
+  return null;
+}
+
 export function getAllPostSlugs() {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map(fileName => {

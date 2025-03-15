@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://rhysbutler.com/img/og-image.jpg",
+        url: "https://rhysbutler.com/img/rhys-avatar.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Rhys Butler",
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Rhys Butler | Head of Development at Rapid",
     description: "Personal website of Rhys Butler, Head of Development at Rapid and ex-developer",
     creator: "@mrrhysbutler",
-    images: ["https://rhysbutler.com/img/og-image.jpg"],
+    images: ["https://rhysbutler.com/img/rhys-avatar.jpg"],
   },
   robots: {
     index: true,

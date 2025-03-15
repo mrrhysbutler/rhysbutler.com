@@ -12,10 +12,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://rhysbutler.com/api/og?title=Work&subtitle=Professional%20experience%20and%20projects",
+        url: "https://rhysbutler.com/img/rhys-avatar.jpg",
         width: 1200,
-        height: 630,
-        alt: "Work | Rhys Butler",
+        height: 1200,
+        alt: "Rhys Butler",
       },
     ],
   },
@@ -23,7 +23,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Work | Rhys Butler",
     description: "Professional experience and projects by Rhys Butler, Head of Development at Rapid",
-    images: ["https://rhysbutler.com/api/og?title=Work&subtitle=Professional%20experience%20and%20projects"],
+    images: ["https://rhysbutler.com/img/rhys-avatar.jpg"],
   },
   alternates: {
     canonical: "/work",
