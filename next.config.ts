@@ -8,7 +8,13 @@ const nextConfig: NextConfig = {
   // For Vercel, you can use the default image optimization
   images: {
     // Remove unoptimized: true as Vercel supports image optimization
-    domains: ['rhysbutler.com'], // Add your domain if you're hosting images there
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'rhysbutler.com',
+        pathname: '**',
+      },
+    ],
   },
   
   // Exclude test files from the build
