@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Hi, I'm Rhys 👋
+                    Hi, I&apos;m Rhys 👋
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
                     Head of Development at Rapid
@@ -33,7 +33,7 @@ export default function Home() {
                       Software developer, tech geek, beer enthusiast, devoted husband, and proud father.
                     </p>
                     <p className="mb-4">
-                      Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I've also co-founded a few ventures along the way.
+                      Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I&apos;ve also co-founded a few ventures along the way.
                     </p>
                     <p className="mb-4">
                       As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a complete product solution to market.
@@ -61,7 +61,7 @@ export default function Home() {
             <section className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800" id="contact">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">Get in Touch</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                I'm always open to discussing new projects, opportunities, or just having a chat about technology and development.
+                I&apos;m always open to discussing new projects, opportunities, or just having a chat about technology and development.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -116,7 +116,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Quick Message</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Feel free to reach out via email or connect with me on social media. I'll get back to you as soon as possible.
+                    Feel free to reach out via email or connect with me on social media. I&apos;ll get back to you as soon as possible.
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
                     For professional inquiries, LinkedIn is the best way to reach me.

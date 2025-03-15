@@ -1,6 +1,5 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import Link from "next/link";
 import { Callout } from "@/components/ui/Callout";
 
 export const metadata = {
@@ -15,8 +14,7 @@ export default function WorkPage() {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-6">Work</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
-            A selection of projects I've worked on throughout my career. These showcase my 
-            technical skills, leadership abilities, and problem-solving approach.
+            A selection of projects I&apos;ve worked on throughout my career.
           </p>
           
           {/* Rapid */}
@@ -24,7 +22,7 @@ export default function WorkPage() {
             <h2 className="text-xl font-semibold mb-3">Rapid - Dec 2023 to Present</h2>
             <div className="mb-4 prose dark:prose-invert">
               <p>
-                Since December 2023, following the merger of Nirovision and Rapid Global, I've been serving as Head of Development for the combined entity. In this position, I'm helping the newly formed Rapid WFM team (formerly Rapid) and Rapid Aware team (formerly Nirovision) to integrate and deliver a unique whole product offering in the workplace safety and compliance space.
+                Since December 2023, following the merger of Nirovision and Rapid Global, I&apos;ve been serving as Head of Development for the combined entity. In this position, I&apos;m helping the newly formed Rapid WFM team (formerly Rapid) and Rapid Aware team (formerly Nirovision) to integrate and deliver a unique whole product offering in the workplace safety and compliance space.
               </p>
               <a 
                 href="https://rapidglobal.com" 
@@ -32,7 +30,7 @@ export default function WorkPage() {
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
               >
-                Visit Rapid <span className="ml-1">→</span>
+                Visit Rapid
               </a>
             </div>
           </div>
@@ -42,13 +40,13 @@ export default function WorkPage() {
             <h2 className="text-xl font-semibold mb-3">Nirovision - Jan 2018 to Nov 2023</h2>
             <div className="mb-4 prose dark:prose-invert">
               <p>
-                My journey with Nirovision began in January 2018 as Engineering Manager for the Aware Team, where I oversaw the development of Nirovision's mobile and desktop applications, focusing on creating exceptional user experiences.
+                My journey with Nirovision began in January 2018 as Engineering Manager for the Aware Team, where I oversaw the development of Nirovision&apos;s mobile and desktop applications, focusing on creating exceptional user experiences.
               </p>
               <p>
                 From February 2020 to November 2023, I served as Head of Development at Nirovision, leading the entire development team and overseeing the Nirovision Identity Recognition Platform and our award-winning mobile and web applications. Our focus was on delivering best-in-class face recognition, cloud and edge systems, and creating superior user experiences for our customers.
               </p>
               <div className="mt-6">
-                <Callout variant="milestone" title="Company Milestone">
+                <Callout variant="info" title="Company Milestone">
                   In February 2024, Nirovision announced a merger with Rapid Global.{" "}
                   <a 
                     href="https://www.nirovision.com/blog/nirovision-and-rapid-join-forces" 
@@ -77,16 +75,8 @@ export default function WorkPage() {
             </div>
             <h3 className="text-lg font-medium mb-2">WHERE THE FARK DID I PARK?</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Fark is a simple parking app designed for use in multi-level, multi-bay carparks. Never put a level, row, section or bay in notes or your camera roll ever again - Fark yeah!
+                Fark is a simple parking app designed for use in multi-level, multi-bay carparks. Never put a level, row, section or bay in notes or your camera roll ever again - Fark yeah!
             </p>
-            <a 
-              href="https://itunes.apple.com/app/apple-store/id1192256696" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
-            >
-              App Store <span className="ml-1">→</span>
-            </a>
           </div>
           
           {/* Cammy */}
@@ -113,7 +103,7 @@ export default function WorkPage() {
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
             >
-              Visit Website <span className="ml-1">→</span>
+              Visit Website
             </a>
           </div>
           
@@ -131,7 +121,7 @@ export default function WorkPage() {
             </div>
             <h3 className="text-lg font-medium mb-2">MUSIC FESTIVAL & INTEGRATED SOCIAL EXPERIENCE</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              A partnership with veteren festival promoters Cattleyard (Groovin' the Moo) led to the creation of The Plot. A fusion of Live Event and Online Experiences. Driven by Cattleyards desire to bring the audience to the forefront of an event, this tightly integrated online social system allows the audience to take claim of the festival and interact with artists, promoters and fellow dance addicts.
+              A partnership with veteren festival promoters Cattleyard (Groovin&apos; the Moo) led to the creation of The Plot. A fusion of Live Event and Online Experiences. Driven by Cattleyards desire to bring the audience to the forefront of an event, this tightly integrated online social system allows the audience to take claim of the festival and interact with artists, promoters and fellow dance addicts.
             </p>
             <a 
               href="http://theplot.co" 
@@ -139,7 +129,7 @@ export default function WorkPage() {
               rel="noopener noreferrer"
               className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center"
             >
-              Visit Website <span className="ml-1">→</span>
+              Visit Website
             </a>
           </div>
           
@@ -159,13 +149,13 @@ export default function WorkPage() {
               <div>
                 <h3 className="text-lg font-medium mb-2">Connection Centre</h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Connection Centre was designed for download and install post-activation for Windows clients as a sort of "one-stop-shop" for everything to do with your fixed line broadband service and home network.
+                  Connection Centre was designed for download and install post-activation for Windows clients as a sort of &quot;one-stop-shop&quot; for everything to do with your fixed line broadband service and home network.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-2">Mobile Broadband Client</h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  With a burgeoning mobile broadband market emerging in the early 2000's, Emotum saw a opportunity to improve the experience of a class of software that had received very little love with regards to design first-principles or a focus on user experience.
+                  With a burgeoning mobile broadband market emerging in the early 2000&apos;s, Emotum saw a opportunity to improve the experience of a class of software that had received very little love with regards to design first-principles or a focus on user experience.
                 </p>
               </div>
             </div>
