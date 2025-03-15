@@ -19,6 +19,7 @@ The layout is intentionally minimalistic, allowing me to start with a clean slat
 - Static site generation for fast loading
 - Easy to maintain and update
 - Blog section with markdown support
+- Security headers in place (received an A grade from securityheaders.com)
 
 ## Tech Stack
 
