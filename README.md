@@ -18,6 +18,7 @@ The layout is intentionally minimalistic, allowing me to start with a clean slat
 - Dark mode support
 - Static site generation for fast loading
 - Easy to maintain and update
+- Blog section with markdown support
 
 ## Tech Stack
 
@@ -66,7 +67,9 @@ src/
 ├── components/        # React components
 │   ├── layout/        # Layout components (Header, Footer)
 │   └── ui/            # UI components
-└── content/           # Content data
+├── content/           # Content data
+│   └── blog/          # Blog posts in markdown format
+└── lib/               # Utility functions
 ```
 
 ## Customization
@@ -121,10 +124,10 @@ The project uses GitHub Actions to run tests on pull requests and pushes to the 
 
 I can't imagine I'll want to update the structure of the website much, but we'll see.
 
-- [ ] Possibly add more periodic content (blog posts?). It could be interesting to drive this from markdown files—I'll have to investigate best practices here.
+- [x] Possibly add more periodic content (blog posts?). It could be interesting to drive this from markdown files—I'll have to investigate best practices here. **Update:** Added blog functionality with markdown support and the single blog post from the old site.
 - [ ] It might be fun to try and restyle/rebrand the page, just to see how Claude performs at this.
 - [ ] It could also be interesting to have different models evaluate the code.
-- [x] Some basic testing — but it seems laborious for a project like this. Update: Cursor set up some tests to provide some safety without requiring significant time investment or maintenance burden.
+- [x] Some basic testing — but it seems laborious for a project like this. **Update:** Cursor set up some tests to provide some safety without requiring significant time investment or maintenance burden.
 
 ---
 

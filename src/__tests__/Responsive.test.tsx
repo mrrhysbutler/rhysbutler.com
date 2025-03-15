@@ -46,6 +46,7 @@ describe('Responsive Layout Tests', () => {
     // Basic check that the header is rendered
     expect(screen.getByText('Rhys Butler')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /blog/i })).toBeInTheDocument();
   });
 
   it('Header renders correctly on desktop', () => {
@@ -57,5 +58,6 @@ describe('Responsive Layout Tests', () => {
     // Basic check that the header is rendered
     expect(screen.getByText('Rhys Butler')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /blog/i })).toBeInTheDocument();
   });
 }); 

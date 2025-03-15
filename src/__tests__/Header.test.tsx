@@ -11,11 +11,13 @@ describe('Header', () => {
     // Check if all navigation links are present
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /work/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /blog/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /contact/i })).toBeInTheDocument();
     
     // Check if the links have the correct href attributes
     expect(screen.getByRole('link', { name: /home/i })).toHaveAttribute('href', '/');
     expect(screen.getByRole('link', { name: /work/i })).toHaveAttribute('href', '/work');
+    expect(screen.getByRole('link', { name: /blog/i })).toHaveAttribute('href', '/blog');
     expect(screen.getByRole('link', { name: /contact/i })).toHaveAttribute('href', '/#contact');
   });
 }); 
