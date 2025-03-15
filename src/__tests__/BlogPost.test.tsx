@@ -5,6 +5,7 @@ import { getPostWithHTML } from '@/lib/blog';
 jest.mock('@/lib/blog', () => ({
   getAllPostSlugs: jest.fn(),
   getPostWithHTML: jest.fn(),
+  extractFirstImageFromMarkdown: jest.fn().mockImplementation(() => null),
 }));
 
 // Mock Next.js navigation
