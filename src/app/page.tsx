@@ -11,34 +11,32 @@ export default function Home() {
             {/* Hero Section with About Content */}
             <section className="text-center md:text-left">
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
-                <div className="w-32 h-32 relative rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-32 h-32 md:w-40 md:h-40 relative rounded-full overflow-hidden flex-shrink-0 border-2 border-gray-200 dark:border-gray-700 shadow-md">
                   <Image 
-                    src="/img/memoji.png" 
+                    src="/img/rhys-avatar.jpg" 
                     alt="Rhys Butler" 
                     fill
                     className="object-cover"
                     priority
+                    sizes="(max-width: 768px) 128px, 160px"
                   />
                 </div>
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                    Hi, I'm Rhys Butler
+                    Hi, I'm Rhys 👋
                   </h1>
                   <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
                     Head of Development at Rapid
                   </p>
                   <div className="prose dark:prose-invert max-w-none">
                     <p className="mb-4">
-                      Hi, I'm Rhys, I live in Sydney, Australia, and I love making awesome software!
+                      Software developer, tech geek, beer enthusiast, devoted husband, and proud father.
                     </p>
                     <p className="mb-4">
-                      While I love designing code and user-centered software, I've also had the privilege to lead some fantastic engineering teams and work with some great companies.
+                      Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I've also co-founded a few ventures along the way.
                     </p>
                     <p className="mb-4">
-                      I've even co-founded a few companies of my own.
-                    </p>
-                    <p className="mb-4">
-                      I'm currently working at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a> as Head of Development, helping the newly formed Rapid WFM team (Formerly Rapid) and Rapid Aware team (Formerly Nirovision) to come together to deliver a unique whole product offering in the Workplace safety and compliance space.
+                      As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a complete product solution to market.
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
