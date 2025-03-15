@@ -18,8 +18,6 @@ const calloutVariants = cva(
         warning:
           "border-yellow-200 bg-yellow-50 text-yellow-900 dark:border-yellow-800 dark:bg-yellow-950/50 dark:text-yellow-100",
         error: "border-red-200 bg-red-50 text-red-900 dark:border-red-800 dark:bg-red-950/50 dark:text-red-100",
-        milestone:
-          "border-purple-200 bg-purple-50 text-purple-900 dark:border-purple-800 dark:bg-purple-950/50 dark:text-purple-100",
       },
     },
     defaultVariants: {
@@ -34,7 +32,6 @@ const iconMap = {
   success: () => <CheckCircle className="h-8 w-8" />,
   warning: () => <AlertTriangle className="h-8 w-8" />,
   error: () => <AlertCircle className="h-8 w-8" />,
-  milestone: () => <Info className="h-8 w-8" />,
 }
 
 export interface CalloutProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof calloutVariants> {
