@@ -80,10 +80,10 @@ export default function Home() {
                     </p>
                     <div className="prose dark:prose-invert max-w-none">
                       <p className="mb-4">
-                        Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I&apos;ve also co-founded a few ventures along the way.
+                        Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I&apos;ve co-founded a few ventures along the way too.
                       </p>
                       <p className="mb-4">
-                      I&apos;m also ageek, lover of beer, doting husband and proud father.
+                      I&apos;m also a geek, lover of beer, doting husband and proud father.
                       </p>                      
                       <p className="mb-4">
                         As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a complete product solution to market.
