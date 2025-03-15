@@ -86,7 +86,7 @@ export default function Home() {
                       I&apos;m also a geek, lover of beer, doting husband and proud father.
                       </p>                      
                       <p className="mb-4">
-                        As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a complete product solution to market.
+                        As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a <a href="https://youexec.com/book-summaries/marketing-selling-high-tech-products" target="_blank" rel="noopener noreferrer">whole product solution</a> to our users.
                       </p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-6">
