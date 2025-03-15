@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function WorkPage() {
   return (
-    <div className="py-12 md:py-16">
+    <div className="pt-12 pb-8 md:pt-16 md:pb-10 lg:pt-20 lg:pb-12">
       <Container>
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-6">Work</h1>
@@ -133,9 +133,9 @@ export default function WorkPage() {
             </a>
           </div>
           
-          {/* Earlier Work */}
-          <div className="mb-16">
-            <h2 className="text-xl font-semibold mb-3">Earlier Work - Emotum</h2>
+          {/* Emotum */}
+          <div>
+            <h2 className="text-xl font-semibold mb-3">Emotum - Jan 2007 to Dec 2017</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               I was previously a Development Director and co-counder of Emotum, an application developer providing bespoke and off-shelf solutions to the telecommunications industry in Australia, Europe and Asia. Emotum provides customer self help and support software solutions with a focus on User Experience and usability best practices, all conceived, developed and deployed in house by the company.
             </p>
