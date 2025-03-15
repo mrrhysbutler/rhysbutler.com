@@ -6,11 +6,22 @@ import Header from '@/components/layout/Header';
 // Add jest-axe matchers
 expect.extend(toHaveNoViolations);
 
+// Define a type for image props
+type ImageProps = {
+  src: string;
+  alt: string;
+  fill?: boolean;
+  className?: string;
+  priority?: boolean;
+  sizes?: string;
+  [key: string]: any; // For any other props that might be passed
+};
+
 // Mock the next/image component
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: any) => {
-    // eslint-disable-next-line jsx-a11y/alt-text
+  default: (props: ImageProps) => {
+    // eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element
     return <img {...props} />;
   },
 }));

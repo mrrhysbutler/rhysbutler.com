@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
     // Remove unoptimized: true as Vercel supports image optimization
     domains: ['rhysbutler.com'], // Add your domain if you're hosting images there
   },
+  
+  // Exclude test files from the build
+  eslint: {
+    // Only run ESLint on these directories during production builds
+    dirs: ['src/app', 'src/components', 'src/lib', 'src/content'],
+  },
 };
 
 export default nextConfig;
