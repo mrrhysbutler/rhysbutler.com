@@ -55,7 +55,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "verification_token", // Replace with your Google verification token if you have one
+    // Remove the placeholder token - add your actual token when needed
+    // google: "verification_token",
   },
   authors: [{ name: "Rhys Butler", url: "https://rhysbutler.com" }],
   keywords: ["Rhys Butler", "Development", "Rapid", "Web Development", "Software Engineering"],
