@@ -33,6 +33,9 @@ export default function Home() {
                       Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I&apos;ve also co-founded a few ventures along the way.
                     </p>
                     <p className="mb-4">
+                    I'm also ageek, lover of beer, doting husband and proud father.
+                    </p>                    
+                    <p className="mb-4">
                       As Head of Development at <a href="https://rapidglobal.com" target="_blank" rel="noopener noreferrer">Rapid</a>, a global leader in AI-driven safety and compliance technology, I lead a team of experts in delivering a complete product solution to market.
                     </p>
                   </div>

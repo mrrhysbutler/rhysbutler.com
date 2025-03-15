@@ -1,6 +1,16 @@
-# Rhys Butler - Personal Website
+# Personal Website Repository
 
-A modern, responsive personal website built with Next.js and Tailwind CSS.
+This repository contains the source code for my personal website. I embarked on this project as an excuse to explore the Cursor AI editor and revamp my simple (and admittedly poxy) website during a cruisy Saturday afternoon. The site is built with Next.js and is currently hosted on Vercel.
+
+## Project Overview
+
+The layout is intentionally minimalistic, allowing me to start with a clean slate and leverage the capabilities of Claude-3.7-Sonnet. I'm no designer, but I managed to achieve the desired aesthetic with the following steps:
+
+- **Fresh Project Initialization**: Kicked off a new Next.js project.
+- **Content Migration**: Transferred content from the previous version of the website.
+- **Content Updates**: Made minor updates to refresh outdated content.
+- **Site Structure Organization**: Rearranged the layout for better navigation.
+- **GitHub Pages Deployment Exploration**: Experimented with GitHub Actions for deployment.
 
 ## Features
 
@@ -15,7 +25,7 @@ A modern, responsive personal website built with Next.js and Tailwind CSS.
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Fonts**: [Geist](https://vercel.com/font) by Vercel
-- **Deployment**: Vercel (recommended), Netlify, or GitHub Pages
+- **Deployment**: Vercel with custom domain (rhysbutler.com)
 
 ## Getting Started
 
@@ -74,27 +84,17 @@ src/
 
 ## Deployment
 
-### Vercel (Recommended)
+The website is currently hosted on Vercel with the domain rhysbutler.com.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+## Future Updates
 
-1. Push your code to a GitHub repository
-2. Import the project to Vercel
-3. Vercel will detect Next.js automatically and use the optimal build settings
+I can't imagine I'll want to update the structure of the website much, but we'll see.
 
-### Other Deployment Options
-
-- **Netlify**: Connect your GitHub repository to Netlify
-- **GitHub Pages**: Use the `next export` command to generate static files
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contact
-
-Rhys Butler - [contact@rhysbutler.com](mailto:contact@rhysbutler.com)
+- [ ] Possibly add more periodic content (blog posts?). It could be interesting to drive this from markdown files—I'll have to investigate best practices here.
+- [ ] It might be fun to try and restyle/rebrand the page, just to see how Claude performs at this.
+- [ ] It could also be interesting to have different models evaluate the code.
+- [ ] Some basic testing — but it seems laborious for a project like this.
 
 ---
 
-Built with ♥ using Next.js and Tailwind CSS
+Built with ♥ using Next.js, Tailwind CSS on Cursor and maximum vibe.
