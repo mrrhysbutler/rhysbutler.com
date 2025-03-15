@@ -25,6 +25,7 @@ The layout is intentionally minimalistic, allowing me to start with a clean slat
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Fonts**: [Geist](https://vercel.com/font) by Vercel
 - **Deployment**: Vercel with custom domain (rhysbutler.com)
+- **Testing**: Jest, React Testing Library, and Axe for accessibility testing
 
 ## Getting Started
 
@@ -85,14 +86,45 @@ src/
 
 The website is currently hosted on Vercel with the domain rhysbutler.com.
 
-## Future Updates
+## Testing
+
+The project includes a lightweight testing setup to ensure basic functionality and accessibility:
+
+### Running Tests
+
+```bash
+# Run tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests for CI
+npm run test:ci
+```
+
+### Test Types
+
+- **Component Tests**: Basic tests to ensure components render correctly
+- **Accessibility Tests**: Using Axe to check for accessibility violations
+- **Responsive Tests**: Simple tests to verify layout on different screen sizes
+
+### CI/CD
+
+The project uses GitHub Actions to run tests on pull requests and pushes to the main branch. The workflow includes:
+
+1. Linting
+2. Running tests
+3. Building the application
+
+## Post Release Updates
 
 I can't imagine I'll want to update the structure of the website much, but we'll see.
 
 - [ ] Possibly add more periodic content (blog posts?). It could be interesting to drive this from markdown files—I'll have to investigate best practices here.
 - [ ] It might be fun to try and restyle/rebrand the page, just to see how Claude performs at this.
 - [ ] It could also be interesting to have different models evaluate the code.
-- [ ] Some basic testing — but it seems laborious for a project like this.
+- [x] Some basic testing — but it seems laborious for a project like this. Update: Cursor set up some tests to provide some safety without requiring significant time investment or maintenance burden.
 
 ---
 
