@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="py-12 md:py-16 lg:py-20">
+    <div className="pt-12 pb-8 md:pt-16 md:pb-10 lg:pt-20 lg:pb-12">
       <Container>
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col gap-8">
@@ -29,9 +29,6 @@ export default function Home() {
                     Head of Development at Rapid
                   </p>
                   <div className="prose dark:prose-invert max-w-none">
-                    <p className="mb-4">
-                      Software developer, tech geek, beer enthusiast, devoted husband, and proud father.
-                    </p>
                     <p className="mb-4">
                       Based in Sydney, Australia, I specialise in crafting innovative, user-centered software products with exceptional engineering teams. I&apos;ve also co-founded a few ventures along the way.
                     </p>
@@ -69,15 +66,6 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-4">Connect With Me</h3>
                   <ul className="space-y-4">
                     <li className="flex items-center">
-                      <span className="font-medium mr-2">Email:</span>
-                      <a 
-                        href="mailto:contact@rhysbutler.com" 
-                        className="text-blue-600 dark:text-blue-400 hover:underline"
-                      >
-                        contact@rhysbutler.com
-                      </a>
-                    </li>
-                    <li className="flex items-center">
                       <span className="font-medium mr-2">LinkedIn:</span>
                       <a 
                         href="https://linkedin.com/in/rhysbutler" 
@@ -111,16 +99,6 @@ export default function Home() {
                       </a>
                     </li>
                   </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold mb-4">Quick Message</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Feel free to reach out via email or connect with me on social media. I&apos;ll get back to you as soon as possible.
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    For professional inquiries, LinkedIn is the best way to reach me.
-                  </p>
                 </div>
               </div>
             </section>
